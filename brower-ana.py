@@ -30,7 +30,7 @@ class BaiduSpider():
 
     def Search(self):
         # 打开浏览器 ， 并在百度图片搜索中输入关键字
-        self.download_dir = "/Users/zhouyang/Downloads/" + self.search_keys
+        self.download_dir = "/download/data-dir/crawl/" + self.search_keys
         print "download_dir : ", self.download_dir
         if os.path.exists(self.download_dir):
             os.removedirs(self.download_dir)
